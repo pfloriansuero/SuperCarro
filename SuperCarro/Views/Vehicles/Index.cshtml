@@ -1,0 +1,58 @@
+﻿@model IEnumerable<SuperCarro.Vehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    @*<tr>
+            <th>
+                Foto
+            </th>
+            <th>
+                Marca
+            </th>
+            <th>
+                Detalle
+            </th>
+            <th>
+                Precio
+            </th>
+            <th>
+                Stock
+            </th>
+            <th>
+                Fecha de creación
+            </th>
+            <th></th>
+        </tr>*@
+
+    <div class="row">
+        @foreach (var item in Model)
+        {
+        <div class="col-lg-3">
+            <img src="~/Public/Vehicles/@(string.IsNullOrEmpty(item.Picture) ? "avatar.png" : item.Picture)" style="height:200px; width:200px" /><br />
+            
+            Marca: @item.Mark.Name <br />
+            Estado: @item.Description<br />
+            Año: @item.Year<br />
+            Precio: @item.Price<br />
+            @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+            <a href="~/Vehicles/edit?Id=@item.Id">Editar</a> |
+            <a href="~/Vehicles/delete?Id=@item.Id">Eliminar</a>
+        </div>
+            
+
+
+        }
+    </div>
+
+    
+
+    </table>

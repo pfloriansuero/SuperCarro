@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="dc5f3e662e8b4b7697f8a12f8a3f5337" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.Category" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.Mark" Width="1.5" PointX="0.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.Model" Width="1.5" PointX="0.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.Supplier" Width="1.5" PointX="0.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="INTEC_SuperCarModel.Vehicle" Width="2" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="INTEC_SuperCarModel.FK_Vehicle_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="INTEC_SuperCarModel.FK_Vehicle_Mark" ManuallyRouted="false" />
+        <AssociationConnector Association="INTEC_SuperCarModel.FK_Vehicle_Model" ManuallyRouted="false" />
+        <AssociationConnector Association="INTEC_SuperCarModel.FK_Vehicle_Supplier" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
